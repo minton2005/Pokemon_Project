@@ -21,10 +21,10 @@ namespace PokemonDEX
             this.Speed = 100;
             this.Total = 580;
             this.Name = "Zapdos";
-            byte[] pikachuImage = Resource1.ResourceManager.GetObject("Zapdos") as byte[];
-            if (pikachuImage != null)
+            byte[] ZapdosImage = Resource1.ResourceManager.GetObject("Zapdos") as byte[];
+            if (ZapdosImage != null)
             {
-                this.image = pikachuImage;
+                this.image = ZapdosImage;
             }
             else
             {
@@ -32,7 +32,7 @@ namespace PokemonDEX
                 // Option 1: Use a default image from resources
                 this.image = PokemonDEX.Resource1.Zapdos; // ต้องเพิ่มรูปภาพ DefaultPikachuImage ใน Resources
                 // Option 2: Log an error message
-                Console.WriteLine("Error: Pikachu image not found in resources.");
+                Console.WriteLine("Error: Zapdos image not found in resources.");
             }
         }
         public string Status { get; set; }
