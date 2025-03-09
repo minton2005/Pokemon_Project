@@ -21,10 +21,10 @@ namespace PokemonDEX
             this.Speed = 55;
             this.Total = 245;
             this.Name = "Zubat";
-            byte[] pikachuImage = Resource1.ResourceManager.GetObject("Zubat") as byte[];
-            if (pikachuImage != null)
+            byte[] Zubat = Resource1.ResourceManager.GetObject("Zubat") as byte[];
+            if (ZubatImage != null)
             {
-                this.image = pikachuImage;
+                this.image = ZubatImage;
             }
             else
             {
@@ -32,7 +32,7 @@ namespace PokemonDEX
                 // Option 1: Use a default image from resources
                 this.image = PokemonDEX.Resource1.Zubat; // ต้องเพิ่มรูปภาพ DefaultPikachuImage ใน Resources
                 // Option 2: Log an error message
-                Console.WriteLine("Error: Pikachu image not found in resources.");
+                Console.WriteLine("Error: Zubat image not found in resources.");
             }
         }
             public string Status { get; set; }
