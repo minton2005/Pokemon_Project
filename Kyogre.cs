@@ -21,10 +21,10 @@ namespace PokemonDEX
             this.Speed = 90;
             this.Total = 670;
             this.Name = "Kyogre";
-            byte[] pikachuImage = Resource1.ResourceManager.GetObject("Kyogre") as byte[];
-            if (pikachuImage != null)
+            byte[] KyogreImage = Resource1.ResourceManager.GetObject("Kyogre") as byte[];
+            if (KyogreImage != null)
             {
-                this.image = pikachuImage;
+                this.image = KyogreImage;
             }
             else
             {
@@ -32,7 +32,7 @@ namespace PokemonDEX
                 // Option 1: Use a default image from resources
                 this.image = PokemonDEX.Resource1.Kyogre; // ต้องเพิ่มรูปภาพ DefaultPikachuImage ใน Resources
                 // Option 2: Log an error message
-                Console.WriteLine("Error: Pikachu image not found in resources.");
+                Console.WriteLine("Error: Kyogre image not found in resources.");
             }
         }
         public string Status { get; set; }
