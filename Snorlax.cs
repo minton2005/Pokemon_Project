@@ -21,10 +21,10 @@ namespace PokemonDEX
             this.Speed = 30;
             this.Total = 540;
             this.Name = "Snorlax";
-            byte[] pikachuImage = Resource1.ResourceManager.GetObject("Snorlax") as byte[];
-            if (pikachuImage != null)
+            byte[] SnorlaxImage = Resource1.ResourceManager.GetObject("Snorlax") as byte[];
+            if (SnorlaxImage != null)
             {
-                this.image = pikachuImage;
+                this.image = SnorlaxImage;
             }
             else
             {
@@ -33,7 +33,7 @@ namespace PokemonDEX
                 this.image = PokemonDEX.Resource1.Snorlax; // ต้องเพิ่มรูปภาพ DefaultPikachuImage ใน Resources
 
                 // Option 2: Log an error message
-                Console.WriteLine("Error: Pikachu image not found in resources.");
+                Console.WriteLine("Error: Snorlax image not found in resources.");
             }
         }
         public string Status { get; set; }
