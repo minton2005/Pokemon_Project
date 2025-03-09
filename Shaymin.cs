@@ -21,10 +21,10 @@ namespace PokemonDEX
             this.Speed = 100;
             this.Total = 600;
             this.Name = "Shaymin";
-            byte[] pikachuImage = Resource1.ResourceManager.GetObject("Shaymin") as byte[];
+            byte[] ShayminImage = Resource1.ResourceManager.GetObject("Shaymin") as byte[];
             if (pikachuImage != null)
             {
-                this.image = pikachuImage;
+                this.image = ShayminImage;
             }
             else
             {
@@ -32,7 +32,7 @@ namespace PokemonDEX
                 // Option 1: Use a default image from resources
                 this.image = PokemonDEX.Resource1.Shaymin; // ต้องเพิ่มรูปภาพ DefaultPikachuImage ใน Resources
                 // Option 2: Log an error message
-                Console.WriteLine("Error: Pikachu image not found in resources.");
+                Console.WriteLine("Error: Shaymin image not found in resources.");
             }
         }
         public string Status { get; set; }
